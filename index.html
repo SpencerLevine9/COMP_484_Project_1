@@ -19,8 +19,8 @@ In the nav links, add rel="next" on the link to the first section page. -->
 
   <header>
     <!-- TODO: site title (h1) + nav -->
-     <img class="header-art" src="images/AdobeStock_79815392_Preview.jpeg" alt="">
-     <h1>Surfing Basics</h1>
+     <img class="header-art" src="images/AdobeStock_79815392_Preview.jpeg" alt="" decoding ="async"> <!--class = css class, alt = alternative text for image, decoding the image asynchronously so the page can render faster -->
+     <h1>Surfing Basics</h1>                 <!-- decoding ="async": decoding the image asynchronously so the page can render faster -->
 <nav aria-label="Primary">
   <ul> <!-- unordered list -->
     <li><a href="spots.html" rel="next">Where to Surf</a></li> <!-- li = list, rel = relationship between a linked resource and the current document-->
@@ -43,7 +43,8 @@ In the nav links, add rel="next" on the link to the first section page. -->
     <h2>Why People Enjoy Surfing</h2>
     <blockquote cite="https://en.wikipedia.org/wiki/Duke_Kahanamoku">
     “Out of the water, I am nothing.”
-    <footer>— <a href="https://en.wikipedia.org/wiki/Duke_Kahanamoku">Duke Kahanamoku</a></footer>
+    <footer>— <a href="https://en.wikipedia.org/wiki/Duke_Kahanamoku" referrerpolicy="no-referrer">Duke Kahanamoku</a></footer>
+<!-- referrerpolicy="no-referrer": Controls what referrer info gets sent when the user clicks, no-referrer sends none. its great for external sources -->
   </blockquote> <!-- blockquote = represents content that is quoted from another source-->
 <ul>
   <li>Surfing is a fun water sport where you ride waves on a surfboard. It’s a great way to enjoy the ocean and get some exercise.</li>
@@ -71,6 +72,13 @@ In the nav links, add rel="next" on the link to the first section page. -->
   <p>This site was created by Spencer as a resource for beginner surfers. If you have any questions or feedback, feel free to reach out!</p>
   <p>Next Page: <a href="spots.html" rel="next">Where To Surf</a></p> <!-- rel = relationship and attribute for link, a = anchor which is the tag for link-->
   </section>
+
+<p>
+  <a href="files/beginner-checklist.txt" download="surfing-checklist.txt"> <!--href="files/beginner-checklist.txt": path relative to index.html-->
+    Download the beginner surf checklist                                   <!-- download="surfing-checklist.txt": the filename users will see when saving-->
+  </a> <!-- it downloads a checklist from the website -->
+</p>
+
 </main>
 
   <footer>
