@@ -1,5 +1,5 @@
 html, body {
-	background: #335d99; /* Beccapurple */
+	background: #335d99; /* light blue background */
 	margin: 0;
 }
 h1, h2, h3, h4, h5, h6, p {
@@ -113,7 +113,7 @@ blockquote {
 	margin-right: 10px;
 }
 
-.header-art {
+.header-art { /* CSS class for header images  on each page*/
 	width: 30%;
 	height: auto;
 	border-radius: 8px;
